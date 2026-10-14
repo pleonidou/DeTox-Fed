@@ -1,0 +1,121 @@
+model,tier,dataset,prompt,test_set,seed,n,macro_f1,toxic_precision,toxic_recall
+Claude Opus 5,top tier,mastodon,base,Local,1,1000,0.7489435122902652,0.756701030927835,0.734
+Claude Opus 5,top tier,mastodon,base,Local,42,1000,0.777956479469976,0.7704280155642024,0.792
+Claude Opus 5,top tier,mastodon,base,Local,999,1000,0.7437037215020563,0.7618025751072961,0.71
+Claude Opus 5,top tier,mastodon,base,Shared Global,1,1000,0.6959556054913236,0.7368421052631579,0.616
+Claude Opus 5,top tier,mastodon,base,Shared Global,42,1000,0.7947765116211555,0.776735459662289,0.828
+Claude Opus 5,top tier,mastodon,base,Shared Global,999,1000,0.7341362085415515,0.7652370203160271,0.678
+Claude Opus 5,top tier,mastodon,rule,Local,1,1000,0.7239729031727056,0.7562642369020501,0.664
+Claude Opus 5,top tier,mastodon,rule,Local,42,1000,0.7599222911650398,0.8013856812933026,0.694
+Claude Opus 5,top tier,mastodon,rule,Local,999,1000,0.7209841101961673,0.7686746987951807,0.638
+Claude Opus 5,top tier,mastodon,rule,Shared Global,1,1000,0.6629012013627398,0.7478260869565218,0.516
+Claude Opus 5,top tier,mastodon,rule,Shared Global,42,1000,0.7606359272453401,0.7830802603036876,0.722
+Claude Opus 5,top tier,mastodon,rule,Shared Global,999,1000,0.7178147574819402,0.7669902912621359,0.632
+Claude Opus 5,top tier,pleroma,base,Local,1,1000,0.6624256947019531,0.7850162866449512,0.482
+Claude Opus 5,top tier,pleroma,base,Local,42,1000,0.6626855357712249,0.749271137026239,0.514
+Claude Opus 5,top tier,pleroma,base,Local,999,1000,0.6609760561739796,0.7861842105263158,0.478
+Claude Opus 5,top tier,pleroma,base,Shared Global,1,1000,0.6647324306898775,0.7692307692307693,0.5
+Claude Opus 5,top tier,pleroma,base,Shared Global,42,1000,0.6498738023400609,0.7044854881266491,0.534
+Claude Opus 5,top tier,pleroma,base,Shared Global,999,1000,0.6711106832876097,0.6919642857142857,0.62
+Claude Opus 5,top tier,pleroma,rule,Local,1,1000,0.6104718854872954,0.7786885245901639,0.38
+Claude Opus 5,top tier,pleroma,rule,Local,42,1000,0.6357187165641822,0.7483443708609272,0.452
+Claude Opus 5,top tier,pleroma,rule,Local,999,1000,0.632198402690206,0.7678571428571429,0.43
+Claude Opus 5,top tier,pleroma,rule,Shared Global,1,1000,0.6493933047646097,0.768976897689769,0.466
+Claude Opus 5,top tier,pleroma,rule,Shared Global,42,1000,0.6375890586605496,0.7030812324929971,0.502
+Claude Opus 5,top tier,pleroma,rule,Shared Global,999,1000,0.6782274240451324,0.6984478935698448,0.63
+GPT-5.6 Sol,top tier,mastodon,base,Local,1,1000,0.7933975472477746,0.7653429602888087,0.848
+GPT-5.6 Sol,top tier,mastodon,base,Local,42,1000,0.8198587692751116,0.803030303030303,0.848
+GPT-5.6 Sol,top tier,mastodon,base,Local,999,1000,0.775977597759776,0.7705882352941177,0.786
+GPT-5.6 Sol,top tier,mastodon,base,Shared Global,1,1000,0.7398241211058676,0.7281368821292775,0.766
+GPT-5.6 Sol,top tier,mastodon,base,Shared Global,42,1000,0.8635086310718587,0.825,0.924
+GPT-5.6 Sol,top tier,mastodon,base,Shared Global,999,1000,0.815875531859537,0.8003802281368821,0.842
+GPT-5.6 Sol,top tier,mastodon,rule,Local,1,999,0.7865943369829135,0.8059701492537313,0.756
+GPT-5.6 Sol,top tier,mastodon,rule,Local,42,999,0.8066952402436274,0.8214285714285714,0.7835671342685371
+GPT-5.6 Sol,top tier,mastodon,rule,Local,999,1000,0.7632575757575757,0.7972972972972973,0.708
+GPT-5.6 Sol,top tier,mastodon,rule,Shared Global,1,999,0.7232873732017079,0.7616822429906542,0.6533066132264529
+GPT-5.6 Sol,top tier,mastodon,rule,Shared Global,42,1000,0.8279972479559673,0.8306451612903226,0.824
+GPT-5.6 Sol,top tier,mastodon,rule,Shared Global,999,999,0.7817716737955479,0.8283062645011601,0.714
+GPT-5.6 Sol,top tier,pleroma,base,Local,1,1000,0.7310250391236306,0.8241758241758241,0.6
+GPT-5.6 Sol,top tier,pleroma,base,Local,42,1000,0.7421623443330532,0.8253968253968254,0.624
+GPT-5.6 Sol,top tier,pleroma,base,Local,999,1000,0.7524941745580109,0.8009478672985783,0.676
+GPT-5.6 Sol,top tier,pleroma,base,Shared Global,1,1000,0.7471733272896679,0.8,0.664
+GPT-5.6 Sol,top tier,pleroma,base,Shared Global,42,1000,0.7326901818912672,0.772093023255814,0.664
+GPT-5.6 Sol,top tier,pleroma,base,Shared Global,999,1000,0.7288305190744215,0.7180952380952381,0.754
+GPT-5.6 Sol,top tier,pleroma,rule,Local,1,1000,0.6816940577306461,0.8402777777777778,0.484
+GPT-5.6 Sol,top tier,pleroma,rule,Local,42,999,0.6980139343504488,0.8333333333333334,0.5210420841683366
+GPT-5.6 Sol,top tier,pleroma,rule,Local,999,1000,0.7055561654179308,0.8123167155425219,0.554
+GPT-5.6 Sol,top tier,pleroma,rule,Shared Global,1,998,0.7133031287960865,0.807909604519774,0.5742971887550201
+GPT-5.6 Sol,top tier,pleroma,rule,Shared Global,42,1000,0.6850894437701214,0.7630853994490359,0.554
+GPT-5.6 Sol,top tier,pleroma,rule,Shared Global,999,999,0.6903319974519609,0.703862660944206,0.657314629258517
+Gemini 3.7 Flash,top tier,mastodon,base,Local,1,1000,0.7404080785005971,0.8337874659400545,0.612
+Gemini 3.7 Flash,top tier,mastodon,base,Local,42,999,0.745465155462772,0.868421052631579,0.594
+Gemini 3.7 Flash,top tier,mastodon,base,Local,999,1000,0.7303534830025293,0.8454810495626822,0.58
+Gemini 3.7 Flash,top tier,mastodon,base,Shared Global,1,1000,0.6791609957861782,0.7627118644067796,0.54
+Gemini 3.7 Flash,top tier,mastodon,base,Shared Global,42,1000,0.7566701019122868,0.8721590909090909,0.614
+Gemini 3.7 Flash,top tier,mastodon,base,Shared Global,999,1000,0.7365590897961587,0.881619937694704,0.566
+Gemini 3.7 Flash,top tier,mastodon,rule,Local,1,1000,0.7287032013022247,0.8511904761904762,0.572
+Gemini 3.7 Flash,top tier,mastodon,rule,Local,42,999,0.7187945687620414,0.8807947019867549,0.532
+Gemini 3.7 Flash,top tier,mastodon,rule,Local,999,1000,0.6954642823108252,0.8280254777070064,0.52
+Gemini 3.7 Flash,top tier,mastodon,rule,Shared Global,1,1000,0.6574340456414469,0.7840531561461794,0.472
+Gemini 3.7 Flash,top tier,mastodon,rule,Shared Global,42,1000,0.6784298096620771,0.8571428571428571,0.468
+Gemini 3.7 Flash,top tier,mastodon,rule,Shared Global,999,1000,0.7120638923917613,0.9035714285714286,0.506
+Gemini 3.7 Flash,top tier,pleroma,base,Local,1,996,0.7010365108751779,0.8504983388704319,0.5150905432595574
+Gemini 3.7 Flash,top tier,pleroma,base,Local,42,1000,0.7069715824781475,0.8562091503267973,0.524
+Gemini 3.7 Flash,top tier,pleroma,base,Local,999,1000,0.703220062323787,0.823170731707317,0.54
+Gemini 3.7 Flash,top tier,pleroma,base,Shared Global,1,1000,0.7141223556317895,0.8323353293413174,0.556
+Gemini 3.7 Flash,top tier,pleroma,base,Shared Global,42,990,0.6942248780303317,0.7951807228915663,0.5387755102040817
+Gemini 3.7 Flash,top tier,pleroma,base,Shared Global,999,1000,0.7004461248849122,0.7199124726477024,0.658
+Gemini 3.7 Flash,top tier,pleroma,rule,Local,1,996,0.6845622462643739,0.8644688644688645,0.47484909456740443
+Gemini 3.7 Flash,top tier,pleroma,rule,Local,42,1000,0.6637956726154681,0.8505747126436781,0.444
+Gemini 3.7 Flash,top tier,pleroma,rule,Local,999,1000,0.6510172688463853,0.8095238095238095,0.442
+Gemini 3.7 Flash,top tier,pleroma,rule,Shared Global,1,1000,0.6751218816940612,0.8321678321678322,0.476
+Gemini 3.7 Flash,top tier,pleroma,rule,Shared Global,42,990,0.6449706053710487,0.7875457875457875,0.4387755102040816
+Gemini 3.7 Flash,top tier,pleroma,rule,Shared Global,999,1000,0.6650138672187399,0.6973995271867612,0.59
+Claude Haiku 4.5,lightweight,mastodon,base,Local,1,1000,0.6889847602532524,0.691683569979716,0.682
+Claude Haiku 4.5,lightweight,mastodon,base,Local,42,1000,0.7309222365263561,0.723404255319149,0.748
+Claude Haiku 4.5,lightweight,mastodon,base,Local,999,1000,0.68891009501746,0.6827852998065764,0.706
+Claude Haiku 4.5,lightweight,mastodon,base,Shared Global,1,1000,0.6848287855033324,0.7242206235011991,0.604
+Claude Haiku 4.5,lightweight,mastodon,base,Shared Global,42,1000,0.7497437375872894,0.7349624060150376,0.782
+Claude Haiku 4.5,lightweight,mastodon,base,Shared Global,999,1000,0.7429421619864469,0.7359223300970874,0.758
+Claude Haiku 4.5,lightweight,pleroma,base,Local,1,1000,0.6224893119303058,0.8170212765957446,0.384
+Claude Haiku 4.5,lightweight,pleroma,base,Local,42,1000,0.6194792239955971,0.809322033898305,0.382
+Claude Haiku 4.5,lightweight,pleroma,base,Local,999,1000,0.6440132472737954,0.7540453074433657,0.466
+Claude Haiku 4.5,lightweight,pleroma,base,Shared Global,1,1000,0.6830342530173896,0.8089171974522293,0.508
+Claude Haiku 4.5,lightweight,pleroma,base,Shared Global,42,1000,0.5942439254541165,0.6982456140350877,0.398
+Claude Haiku 4.5,lightweight,pleroma,base,Shared Global,999,1000,0.6880563705208255,0.7123595505617978,0.634
+Dolphin 3 (8B),lightweight,mastodon,base,Local,1,1000,0.6135571745327842,0.5917808219178082,0.864
+Dolphin 3 (8B),lightweight,mastodon,base,Local,42,1000,0.6367859782493929,0.6068493150684932,0.886
+Dolphin 3 (8B),lightweight,mastodon,base,Local,999,1000,0.5878636465994502,0.5754716981132075,0.854
+Dolphin 3 (8B),lightweight,mastodon,base,Shared Global,1,1000,0.6267126474868556,0.6040061633281972,0.784
+Dolphin 3 (8B),lightweight,mastodon,base,Shared Global,42,1000,0.663958568068157,0.6269727403156384,0.874
+Dolphin 3 (8B),lightweight,mastodon,base,Shared Global,999,1000,0.6827993789545735,0.6392045454545454,0.9
+Dolphin 3 (8B),lightweight,pleroma,base,Local,1,1000,0.6621499330332903,0.6428571428571429,0.738
+Dolphin 3 (8B),lightweight,pleroma,base,Local,42,1000,0.6335764143349711,0.6437768240343348,0.6
+Dolphin 3 (8B),lightweight,pleroma,base,Local,999,1000,0.6593783000867128,0.6414762741652021,0.73
+Dolphin 3 (8B),lightweight,pleroma,base,Shared Global,1,1000,0.7362263862209497,0.7044673539518901,0.82
+Dolphin 3 (8B),lightweight,pleroma,base,Shared Global,42,1000,0.62996299629963,0.6326530612244898,0.62
+Dolphin 3 (8B),lightweight,pleroma,base,Shared Global,999,1000,0.6839841317080504,0.6471494607087828,0.84
+GPT-5.4 mini,lightweight,mastodon,base,Local,1,1000,0.7004597026604069,0.6619496855345912,0.842
+GPT-5.4 mini,lightweight,mastodon,base,Local,42,1000,0.7703011472853223,0.7320819112627986,0.858
+GPT-5.4 mini,lightweight,mastodon,base,Local,999,1000,0.7202982948257197,0.6920415224913494,0.8
+GPT-5.4 mini,lightweight,mastodon,base,Shared Global,1,1000,0.7171128659476117,0.6960431654676259,0.774
+GPT-5.4 mini,lightweight,mastodon,base,Shared Global,42,1000,0.7711201859949646,0.7419928825622776,0.834
+GPT-5.4 mini,lightweight,mastodon,base,Shared Global,999,1000,0.7222332447125114,0.6798732171156894,0.858
+GPT-5.4 mini,lightweight,pleroma,base,Local,1,1000,0.6875204235017319,0.7724719101123596,0.55
+GPT-5.4 mini,lightweight,pleroma,base,Local,42,1000,0.6953151659922976,0.7659574468085106,0.576
+GPT-5.4 mini,lightweight,pleroma,base,Local,999,1000,0.7040384208292743,0.7313769751693002,0.648
+GPT-5.4 mini,lightweight,pleroma,base,Shared Global,1,1000,0.7367229165048504,0.7936117936117936,0.646
+GPT-5.4 mini,lightweight,pleroma,base,Shared Global,42,1000,0.7264942879383981,0.7483588621444202,0.684
+GPT-5.4 mini,lightweight,pleroma,base,Shared Global,999,1000,0.6981521092749534,0.6799276672694394,0.752
+Gemini 3.1 Flash-Lite,lightweight,mastodon,base,Local,1,1000,0.7244419950399559,0.7472527472527473,0.68
+Gemini 3.1 Flash-Lite,lightweight,mastodon,base,Local,42,1000,0.7285501652413028,0.7851851851851852,0.636
+Gemini 3.1 Flash-Lite,lightweight,mastodon,base,Local,999,1000,0.6926738483582233,0.7360774818401937,0.608
+Gemini 3.1 Flash-Lite,lightweight,mastodon,base,Shared Global,1,1000,0.6610046369722871,0.7019704433497537,0.57
+Gemini 3.1 Flash-Lite,lightweight,mastodon,base,Shared Global,42,1000,0.7968877573592996,0.8497652582159625,0.724
+Gemini 3.1 Flash-Lite,lightweight,mastodon,base,Shared Global,999,1000,0.6880650036190517,0.7369727047146402,0.594
+Gemini 3.1 Flash-Lite,lightweight,pleroma,base,Local,1,996,0.643894389438944,0.7809187279151943,0.4446680080482897
+Gemini 3.1 Flash-Lite,lightweight,pleroma,base,Local,42,1000,0.6564675943079483,0.7734627831715211,0.478
+Gemini 3.1 Flash-Lite,lightweight,pleroma,base,Local,999,1000,0.6822952943045322,0.7568306010928961,0.554
+Gemini 3.1 Flash-Lite,lightweight,pleroma,base,Shared Global,1,1000,0.7064126984126984,0.7813333333333333,0.586
+Gemini 3.1 Flash-Lite,lightweight,pleroma,base,Shared Global,42,990,0.6541980554179809,0.7183098591549296,0.5204081632653061
+Gemini 3.1 Flash-Lite,lightweight,pleroma,base,Shared Global,999,1000,0.6625866686691197,0.6523364485981309,0.698

@@ -1,0 +1,11 @@
+# Federated GraphNLI baseline (Python 3.10). Shares the DeTox-Fed environment
+# (../DeTox-Fed_experiments/requirements.txt) and additionally needs sentence-transformers.
+fedml==0.9.6
+torch
+transformers
+sentence-transformers
+numpy
+pandas
+scikit-learn
+networkx
+jupyter
