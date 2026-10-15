@@ -17,8 +17,19 @@ Each run is 6,000 classifications per model and dataset (10 instances × 200 con
 
 ## Models
 
-* **Top tier:** Claude Opus 5, GPT-5.6 Sol, Gemini 3.7 Flash.
-* **Lightweight:** Dolphin 3 (8B), Claude Haiku 4.5, GPT-5.4 mini, Gemini 3.1 Flash-Lite.
+| Model | Provider | Context window | Prompts | How it was run |
+|---|---|---|---|---|
+| **Top tier** | | | | |
+| Claude Opus 5 | Anthropic | 1M | Base, Rule | Batch API |
+| GPT-5.6 Sol | OpenAI | 1.05M | Base, Rule | Batch API |
+| Gemini 3.7 Flash | Google | 1M | Base, Rule | Batch API |
+| **Lightweight** | | | | |
+| Claude Haiku 4.5 | Anthropic | 200K | Base | API, 50 requests/min |
+| GPT-5.4 mini | OpenAI | 400K | Base | API, 50 requests/min |
+| Gemini 3.1 Flash-Lite | Google | 1M | Base | API, 50 requests/min |
+| Dolphin 3 (8B) | Open-source | 128K | Base | Colab T4 GPU (no API cost) |
+
+Context windows are the providers' advertised maximums (tokens). Our prompts use only a small part of them.
 
 ## Results
 

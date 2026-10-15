@@ -1,43 +1,41 @@
-# DeTox-Fed: Detecting Toxic Conversations in the Fediverse with Federated Graph Neural Networks
+# DeTox-Fed
 
-This repository contains the code and resources for the DeTox-Fed paper:  
-[DeTox-Fed: Detecting Toxic Conversations in the Fediverse with Federated Graph Neural Networks](https://arxiv.org/abs/2605.21054).
+**Detecting Toxic Conversations in the Fediverse with Federated Graph Neural Networks**
+
+[![arXiv](https://img.shields.io/badge/arXiv-2605.21054-b31b1b.svg)](https://arxiv.org/abs/2605.21054)
 
 ## Overview
 
-Content moderation in the Fediverse is challenging because conversations, user activity, and moderation decisions are distributed across independently operated instances. **DeTox-Fed** is a federated graph-learning framework for **conversation-level toxicity detection** that enables instances to collaboratively train a moderation model while keeping raw conversations and moderation labels local.
+Content moderation in the Fediverse is hard: conversations, users, and moderation decisions are spread across independently run instances. **DeTox-Fed** is a federated graph-learning framework for **conversation-level toxicity detection**. Instances train a shared moderation model together, while raw conversations and moderation labels stay local.
 
 <p align="center">
   <img src="illustrations/DeTox-Fed-Framework-Illustration.svg" width="800" alt="DeTox-Fed framework">
 </p>
 
 <p align="center">
-  <em>
-    Overview of the DeTox-Fed framework.
-  </em>
+  <em>Overview of the DeTox-Fed framework.</em>
 </p>
 
-DeTox-Fed operates in four main stages:
-
-**(A) Raw conversations.** The raw data consist of conversation trees from different DSN instances, where each tree contains an initial post and its replies. Toots from the same user are shown with the same color.
-
-**(B) Conversation graphs.** For each DSN instance, we construct a weighted conversation graph in which nodes represent conversation trees and edge weights represent the number of users shared between two conversations. For example, Trees A and B share three users (Blue, Green, and Red), so the weight of the edge between them is 3. Each node is represented by a feature vector combining tree-level structural embeddings, user-related features, sentiment-based features, and other conversation-level statistics.
-
-**(C) Graph backboning.** We reduce noisy and weak connections by extracting the backbone of each conversation graph, keeping only statistically significant edges.
-
-**(D) Federated toxicity detection.** The federated graph-learning phase, where each instance trains a local Graph Neural Network (GNN) model and shares model updates with the FL coordinator.
-
-We evaluate DeTox-Fed on conversation datasets from **Pleroma** and **Mastodon**, using both Detoxify-derived and GPT-derived conversation labels. We compare DeTox-Fed with a federated version of **GraphNLI** and with **seven LLM models** under few-shot prompting.
-
-## Repository structure
-
-| Folder | Content |
+| Stage | What happens |
 |---|---|
-| [`DeTox-Fed_experiments/`](DeTox-Fed_experiments/README.md) | Data preparation, conversation graphs, backboning, and federated training of DeTox-Fed |
-| [`Graphnli_baseline_experiments/`](Graphnli_baseline_experiments/README.md) | Federated GraphNLI baseline, built on the data prepared by `DeTox-Fed_experiments` |
-| [`LLM_experiments/`](LLM_experiments/README.md) | Few-shot LLM baseline, with the per-seed scores used for the results |
+| **A. Raw conversations** | Conversation trees from each instance: an initial post and its replies. Toots from the same user share a color. |
+| **B. Conversation graphs** | One weighted graph per instance. Nodes are conversation trees, and an edge weight is the number of users two conversations share (Trees A and B share three users, so their edge weight is 3). Node features combine tree embeddings, user features, sentiment, and conversation statistics. |
+| **C. Graph backboning** | Noisy, weak edges are removed, keeping only the statistically significant ones. |
+| **D. Federated detection** | Each instance trains a local GNN and sends model updates to the FL coordinator. |
+
+## What we compare
+
+We evaluate on **Pleroma** and **Mastodon**, with Detoxify-derived and GPT-derived conversation labels.
+
+| Method | Description | Folder |
+|---|---|---|
+| **DeTox-Fed** | Federated GNN on backboned conversation graphs | [`DeTox-Fed_experiments/`](DeTox-Fed_experiments/README.md) |
+| **Federated GraphNLI** | Federated version of the GraphNLI baseline | [`Graphnli_baseline_experiments/`](Graphnli_baseline_experiments/README.md) |
+| **LLMs** | Seven LLMs with few-shot prompting | [`LLM_experiments/`](LLM_experiments/README.md) |
 
 Each folder has its own README with setup and usage instructions.
+
+## Data layout
 
 The raw data are not part of the repository. All code reads from and writes to these folders at the repository root:
 
@@ -48,10 +46,14 @@ results/             # training outputs
 figures/             # plots from the notebooks
 ```
 
-## Data
+## Datasets
 
-The **Pleroma dataset** introduced by **Bin Zia et al. (2022)** and made available upon request:
-<https://netsys.surrey.ac.uk/datasets/dsnmod-pleroma/>
+- **Pleroma:** introduced by Bin Zia et al. (2022), available upon request at <https://netsys.surrey.ac.uk/datasets/dsnmod-pleroma/>.
+- **Mastodon:** collected for this paper, available upon request.
+
+<details>
+<summary>Pleroma dataset BibTeX</summary>
+
 ```bibtex
 @article{binzia2022toxicity,
   title={Toxicity in the Decentralized Web and the Potential for Model Sharing},
@@ -63,7 +65,7 @@ The **Pleroma dataset** introduced by **Bin Zia et al. (2022)** and made availab
 }
 ```
 
-The **Mastodon dataset** was collected specifically for this paper. It is available upon request.
+</details>
 
 ## Citation
 
