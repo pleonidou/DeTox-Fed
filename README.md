@@ -1,7 +1,7 @@
 # DeTox-Fed: Detecting Toxic Conversations in the Fediverse with Federated Graph Neural Networks
 
 This repository contains the code for the paper
-[DeTox-Fed](https://arxiv.org/abs/2605.21054), currently under review.
+[DeTox-Fed](https://arxiv.org/abs/2605.21054), currently available as a preprint.
 
 ## Overview
 
@@ -12,6 +12,9 @@ graph is filtered with noise-corrected backboning. Each conversation is describe
 the structure of its reply tree, the activity of its authors, its sentiment and
 simple conversation statistics. Clients train a graph neural network locally, and the
 server combines their models with federated averaging.
+
+![DeTox-Fed Framework](DeTox-Fed-Framework-Illustration.pdf)
+
 
 We evaluate DeTox-Fed on Pleroma and Mastodon data, using toxicity labels derived from
 Detoxify scores and labels produced by an LLM. We compare it with a federated version
